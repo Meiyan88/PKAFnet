@@ -1,4 +1,5 @@
-# PKAFnet
-python, pytorch, torch_geometric
+# Macrovascular Invasion in Hepatocellular Carcinoma Prediction
+Prior Knowledge-Aware Fusion Network for Prediction of Macrovascular Invasion in Hepatocellular Carcinoma
 
-We have provide the model of our PKAFnet. The PKAFnet in model.py can be added into your codes.
+We provide the our PKAFnet and the tumor margin extraction method. 
+
