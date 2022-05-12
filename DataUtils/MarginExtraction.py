@@ -61,11 +61,11 @@ def getMargin(img, mask, ScaleLength=6, pointN=15, stride=1):
         Z = map_coordinates(img, [x1, y1], order=1, mode='constant')
         InterZ = Z[0:pointN]
         OuterZ = Z[pointN + 1:2*pointN+1]
-        if -np.pi < theta[i] < -np.pi / 2 or np.pi / 2 < theta[i] < np.pi:
-            InterZ = Z[pointN + 1:2*pointN+1]
-            InterZ = np.flip(InterZ)
-            OuterZ = Z[0:pointN]
-            OuterZ = np.flip(OuterZ)
+   #     if -np.pi < theta[i] < -np.pi / 2 or np.pi / 2 < theta[i] < np.pi:
+   #        InterZ = Z[pointN + 1:2*pointN+1]
+   #         InterZ = np.flip(InterZ)
+   #         OuterZ = Z[0:pointN]
+   #         OuterZ = np.flip(OuterZ)
         InterZ = InterZ.T
         OuterZ = OuterZ.T
         p[k, :] = np.concatenate([InterZ, Z[pointN:pointN + 1], OuterZ], axis=0)
